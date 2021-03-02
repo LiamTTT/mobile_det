@@ -1,3 +1,6 @@
 */wandb/*
 */runs/*
 pycharm.log 
+*/__pycache__/*
+*/.idea
+
