@@ -1,0 +1,27 @@
+# COCO 2017 dataset http://cocodataset.org
+# Train command: python train.py --data coco.yaml
+# Default dataset location is next to /yolov5:
+#   /parent_folder
+#     /coco
+#     /yolov5
+
+
+# download command/URL (optional)
+# download: bash data/scripts/get_coco.sh
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: ./cells/mob/mob_train.txt  # 20448 images
+val: ./cells/mob/mob_vali.txt  # 4374 images
+test: ./cells/mob/mob_test.txt  # 4428 images
+
+# number of classes
+nc: 1
+
+# class names
+names: ['pos']
+
+# Print classes
+# with open('data/coco.yaml') as f:
+#   d = yaml.load(f, Loader=yaml.FullLoader)  # dict
+#   for i, x in enumerate(d['names']):
+#     print(i, x)
